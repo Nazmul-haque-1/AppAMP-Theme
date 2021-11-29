@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+img{
+  max-width: 100%;
+}
+.clear::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.mid-content{
+  max-width: 1300px;
+  margin: auto;
+}
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+  font-family: 'Work Sans',sans-serif;
+  color: #010101;
+}
+a{
+  text-decoration: none;
+}
+
+/* header */
+.header-section{
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+.header-logo{
+  width: 30%;
+  margin: auto;
+  padding: 10px 0;
+}
+.header-logo img{
+  height: 40px;
+  float: left;
+}
+.header-logo span{
+  font-size: 26px;
+  font-weight: 500;
+  margin-left: 9px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+
+.header-menu{
+  width: 55%;
+}
+.header-menu ul{}
+.header-menu ul li{
+  display: inline-block;
+}
+.header-menu ul li a{
+  display: block;
+  padding: 0 20px;
+  line-height: 60px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.header-menu ul li a i{
+  margin-left: 3px;
+}
+.header-menu ul li a:hover{
+  color: royalblue;
+}
+
+.header-menu ul li{
+  position: relative;
+}
+.header-menu ul li ul{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 300px;
+  background-color: white;
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s;
+  transform: scaleY(0);
+  transform-origin: top center;
+
+}
+.header-menu ul li:hover ul{
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+  color: royalblue;
+}
+.header-menu ul li ul li{
+  text-align: center;
+}
+.header-menu ul li ul li{
+  border-top: 1px solid #ddd;
+
+}
+
+.header-btn{
+  width: 14%;
+  
+}
+.header-btn a{
+  color: royalblue;
+  border: 2px solid royalblue;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: .4s;
+}
+.header-btn a:hover{
+  background: royalblue;
+  color: white !important;
+ 
+  
+}
+
